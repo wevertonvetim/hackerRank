@@ -15,5 +15,4 @@ const leftRotation = (arr,rotation)=>{
     }
     return arr;
 }
-9
 console.log(leftRotation(testCase,2))
