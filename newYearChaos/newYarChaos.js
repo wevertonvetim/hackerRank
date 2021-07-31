@@ -1,4 +1,4 @@
-const testCase = [1, 2, 5, 3, 4, 7, 8, 6]
+const testCase = [1, 2, 5, 3, 7, 8, 6, 4]
 /*
 test 0
 [2, 1, 5, 3, 4] = 3

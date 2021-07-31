@@ -31,3 +31,15 @@ A primeira linha contém um inteiro t, o número de casos de teste.
 Cada um dos próximos t pares de linhas são os seguintes:
 - A primeira linha contém um número inteiro t, o número de pessoas na fila
 - A segunda linha tem n inteiros separados por espaço que descrevem o estado final da fila.
+
+ cont = 0;
+    for (let i = q.length -1 ; i >= 0; i--){
+        console.log( 'i normal '+i);
+        if (q[i] > i+1){
+            if(q[i]-(i+1) >= 3){
+                return "Too chaotic";
+            }
+            console.log('cont: '+ cont)
+        }
+    }
+        return cont;
