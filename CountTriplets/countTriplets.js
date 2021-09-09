@@ -5,21 +5,19 @@ function countTriplets(arr, r) {
   const map = {};
   const doubles = {};
   for (let i = arr.length - 1; i >= 0; i--) {
-    let x = arr[i];
-    let rx = x * r;
-    let r2x = rx * r;
-    let par = [rx, r2x];
-    console.log(par)
-    console.log(doubles[par])
+    let valorX = arr[i];
+    let razaoXR = valorX * r;
+    let razaoXRR = razaoXR * r;
+    let par = [razaoXR, razaoXRR];
     if (doubles[par] !== undefined) {
       count = count + doubles[par];
     }
-    let doub = [x, rx];
+    let doub = [valorX, razaoXR];
     if (doubles[doub] == undefined) {
         doubles[doub] = 0;
     }
-    doubles[doub] = doubles[doub] + (map[rx] == undefined ? 0 : map[rx]);
-    map[x] == undefined ? (map[x] = 1) : map[x]++;
+    doubles[doub] = doubles[doub] + (map[razaoXR] == undefined ? 0 : map[razaoXRR]);
+    map[valorX] == undefined ? (map[valorX] = 1) : map[valorX]++;
   }
   return count;
 }
